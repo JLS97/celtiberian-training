@@ -15,7 +15,8 @@ function App() {
     <BrowserRouter>
       <NBar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />}/>
+        <Route path="/shops" element={<Home />} />
         <Route path="/games" element={<Games />} />
         <Route path="/shop/:id" element={<ShopDetail />} />
       </Routes>
