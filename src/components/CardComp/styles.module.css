@@ -1,0 +1,7 @@
+.cardContainer{
+    width : 18rem;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 100px 100px 25px 25px !important;
+}
