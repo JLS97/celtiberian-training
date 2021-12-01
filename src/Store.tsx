@@ -4,15 +4,15 @@ import { getShops } from './api'
 
 interface StoreInterface {
     data: Shop[],
-    getShops: () => Promise<void>
+    getShopsData: () => Promise<void>
     clear: () => void
 }
 
 const Store = store<StoreInterface>({
     data: [],
-    getShops: async () => {
-        const { data } = await getShops()
-        Store.data = [...Store.data, ...data]
+    getShopsData: async () => {
+        const shops  = await getShops()
+        Store.data = [...Store.data, ...shops]
     },
     clear: () => {
         Store.data = []
