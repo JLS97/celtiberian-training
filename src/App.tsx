@@ -7,7 +7,7 @@ import {
 import Home from './components/Home/index';
 import Games from './components/Games/Games.component';
 import NBar from './components/Navbar/NBar.component';
-import ShopDetail from './components/ShopDetail/ShopDetail.component';
+import ShopDetail from './components/ShopDetail/index';
 
 const App = () => {
 
