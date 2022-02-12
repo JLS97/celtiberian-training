@@ -7,7 +7,7 @@ const Home = () => {
 
     useEffect(() =>{
         getCharacters(setPersonajes)
-    },[personajes]);
+    },[]);
 
     return (
         <div>

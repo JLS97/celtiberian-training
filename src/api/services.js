@@ -7,7 +7,7 @@ const getCharacters = async (state) => {
 
 const getCharacter = async (state, id) => {
     const req = await axios.get(`https://rickandmortyapi.com/api/character/${id}`);
-    console.log(req);
+    state(req.data)
 }
 
 
